@@ -1,1 +1,13 @@
+name = "augestel-sms-to-telegram-bridge"
+main = "index.js"
+compatibility_date = "2026-11-11"
 
+[[queues.producers]]
+binding = "SMS_QUEUE"
+queue = "augestel-sms-queue"
+
+[[queues.consumers]]
+queue = "augestel-sms-queue"
+max_batch_size = 1
+max_batch_timeout = 5
+max_retries = 5
