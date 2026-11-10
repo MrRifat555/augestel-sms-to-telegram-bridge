@@ -1,6 +1,6 @@
 name = "augestel-sms-to-telegram-bridge"
 main = "index.js"
-compatibility_date = "2026-11-11"
+compatibility_date = "2026-11-10"
 
 [[queues.producers]]
 binding = "SMS_QUEUE"
